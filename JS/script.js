@@ -7,4 +7,12 @@ class Usuario{
 function entrar(){
     let nome = document.getElementById("usuario").value
     let senha = document.getElementById("senha").value
+    if (nome == "" || senha == ""){
+        alert("digite")
+    }
+    else{
+        let usuario = new Usuario(nome, senha);
+        localStorage.setItem("usuario",usuario.nome)
+        window.location.href = "jogo.html";
+    }
 }
