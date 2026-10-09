@@ -5,5 +5,6 @@ class Usuario{
     }
 }
 function entrar(){
-    let nome = document.getElementById("usuario")
+    let nome = document.getElementById("usuario").value
+    let senha = document.getElementById("senha").value
 }
